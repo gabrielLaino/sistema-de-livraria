@@ -1,20 +1,21 @@
 package Livro;
 
+import Autor.Autor;
 import java.util.Date;
 
 public class Livro {
     private Integer id;
     private String titulo;
-    private String autor;
+    private Autor autor;
     private Boolean disponivel;
     private Date dataCadastro;
     private Date dataAtualizacao;
 
-    public Livro(Integer id, String titulo, String autor, Boolean disponivel) {
+    public Livro(Integer id, String titulo, Autor autor) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
-        this.disponivel = disponivel;
+        this.disponivel = true;
         this.dataCadastro = new Date();
     }
 }
