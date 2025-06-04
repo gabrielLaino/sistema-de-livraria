@@ -18,4 +18,9 @@ public class Livro {
         this.disponivel = true;
         this.dataCadastro = new Date();
     }
+
+    @Override
+    public String toString() {
+        return "Livro: {id=" + id + ", titulo='" + titulo + "', autor=" + autor.getNome() + "}";
+    }
 }
